@@ -1,0 +1,117 @@
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e6c046;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b4b650;
+}
+body{
+    background-color: #f3f56f !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+.sidebar{
+    background-color: white;
+    border-radius: 50px;
+    height: 90vh;
+    padding: 25px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.336);
+
+}
+.notepadbox{
+    height: 90vh;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.336);
+    padding: 50px;
+}
+.logo-text{
+    background-color: #e6c046;
+    height: 50px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.submitbutton{
+    background-color: rgb(230, 192, 70);
+    border: 0px;;
+    padding: 5px;
+    font-size: 25px;
+    width: 100%;
+    border-radius: 20px;
+        font-weight: bold;
+    transition: 0.2s;
+}
+.submitbutton:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: 0.2s;
+    transform: scale(1.05);
+}
+.searchbox{
+    background-color: rgba(227, 236, 255, 0.555);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.searchbox input{
+    border: 0px;
+    background-color: transparent;
+    font-size: 20px;
+    width: 70%;
+    margin-left: 5px;
+}
+.searchbox input:focus{
+    outline: none;
+}
+.note{
+    background-color: rgba(227, 236, 255, 0.555);
+    padding: 10px;
+    margin-top: 4px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 20px; 
+    cursor: pointer;
+}
+.note:hover{
+    background-color: rgba(227, 236, 255, 0.755);
+}
+.addnewbutton{
+   padding: 20px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #e6c046;
+    border-radius: 20px;
+   
+    
+}
+.addnewbutton a{
+    text-decoration: none;
+    color: rgb(49, 48, 48);
+}
+.addnewbutton:hover{
+    background-color: #000000;
+    color: white !important;
+}
+body a{
+    text-decoration: none;
+    color: black;
+}
