@@ -13,6 +13,7 @@ include 'db.php';
                 <?php
                 if(isset($_GET['id'])){
                     $id = $_GET['id'];
+             
                     $query = "SELECT * FROM notes WHERE id = $id";
                     $result = mysqli_query($conn, $query);
                     $row = mysqli_fetch_assoc($result);
@@ -22,7 +23,7 @@ include 'db.php';
                 }
                 ?>
                 <h1><?php echo $row["title"] ?> 
-                    <button class="btn btn-primary" onclick="copyToClipboard('<?php echo 'https://rohanghalib.me/publicnotepad/view_note.php?id=' . $row['id']; ?>')">
+                    <button class="btn btn-primary" onclick="copyToClipboard('<?php echo 'https://rohanghalib.me/publicnotepad/algo_view.php?id=' . $row['id']; ?>')">
                         <i class="bi bi-copy"></i>
                     </button>
                 </h1>

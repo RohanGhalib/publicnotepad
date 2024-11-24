@@ -10,8 +10,26 @@ include 'db.php';?>
                 <label for="name">Title:</label>
                 <input required type="text" name="title" id="title" class="form-control" maxlength="12" placeholder="Some Person">
                 <br>
-                <label for="name">Note:</label>
-                <textarea required name="note" style="height: 200px;" id="name" class="form-control" placeholder="Public Notepad Is your Ultimate Quick Notes Partner!"></textarea>
+
+                <div id="editor"  name="note" style="height: 200px">
+                    <h3>Anything you type will be engraved in the code of this site, forever!</h3>
+                    <h4>Confess your crush, share your thoughts or do whatever you want!</h4>
+                    <a href="https://rohanghalib.me/publicnotepad/view_note.php?id=7">Make Sure to read Readme before using!</a>
+                </div>
+                <input type="hidden" name="note" id="note">
+                <script>
+                    document.querySelector('form').onsubmit = function() {
+                        document.querySelector('#note').value = quill.root.innerHTML;
+                    };
+                </script>
+                <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+
+<!-- Initialize Quill editor -->
+<script>
+  const quill = new Quill('#editor', {
+    theme: 'snow',
+  });
+</script>
                 <br>
                 <input type="hidden" name="submit">
                 <button class="submitbutton" type="submit">Post</button>

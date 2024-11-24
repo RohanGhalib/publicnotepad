@@ -6,7 +6,7 @@
                     <i class="bi bi-search"></i><input type="text" placeholder="Search ">  
                 </div>
                 <div class="col-lg-2">
-                <div class="addnewbutton " style="width: 20%">
+                <div class="addnewbutton" style="width: 20%">
                     <a href="index.php">
 
                     <i class="bi bi-plus"></i>
@@ -18,12 +18,12 @@
                     <div class="col">
                         <div class="listnotes overflow-auto " style="height: 400px; overflow-x: hidden !important;">
                         <?php
-                            $query = "SELECT * FROM notes ORDER BY id DESC limit 150";
+                            $query = "SELECT * FROM notes ORDER BY views DESC limit 150";
                             $result = mysqli_query($conn, $query);
 
                             while ($row = mysqli_fetch_assoc($result)) {
                                 echo '<div class="note">';
-                                echo '<a href="view_note.php?id='. $row['id'].  '"><i class="bi bi-sticky-fill"></i>&nbsp; &nbsp; ' . htmlspecialchars($row['title']) .'</a>';
+                                echo '<a href="algo_view.php?id='. $row['id'].  '"><i class="bi bi-sticky-fill"></i>&nbsp; &nbsp; ' . htmlspecialchars($row['title']) .'</a>';
                                 echo '</div>';
                             }
                             ?>
