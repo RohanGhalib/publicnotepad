@@ -1,6 +1,3 @@
-Here’s an enhanced version of your **PublicNotes** application description, incorporating all the details you've provided:
-
----
 
 # 📝 PublicNotes
 
