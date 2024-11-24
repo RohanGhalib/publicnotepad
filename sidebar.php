@@ -1,6 +1,6 @@
 <div class="col-lg-3">
             <div class="sidebar">
-                <div class="logo-text"><strong><i class="bi bi-journal-text"></i> PublicNotePad</strong></div>
+                <div class="logo-text"><a href="index.php"><strong><i class="bi bi-journal-text"></i> PublicNotePad</strong></a></div>
                 <div class="row mt-2 justify-content-center align-items-center"> 
                 <div class="searchbox col-lg-9">
                     <i class="bi bi-search"></i><input type="text" placeholder="Search ">  
