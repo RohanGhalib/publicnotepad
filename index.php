@@ -10,7 +10,7 @@ include 'db.php';?>
                 <label for="name">Title:</label>
                 <input required type="text" name="title" id="title" class="form-control" maxlength="12" placeholder="Some Person">
                 <br>
-
+                <p>Try the new <a href="changetheme.php?theme=3"><u>GruvBox Dark</u></a> and <a href="changetheme.php?theme=2"><u>GruvBox Light</u></a> theme </p>
                 <div id="editor"  name="note" style="height: 200px">
                     <h3>Anything you type will be engraved in the code of this site, forever!</h3>
                     <h4>Confess your crush, share your thoughts or do whatever you want!</h4>

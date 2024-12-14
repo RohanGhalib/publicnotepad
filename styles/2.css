@@ -4,12 +4,12 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #D5C4A3;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #e6c046;
+    background: #D5C4A3;
     border-radius: 10px;
 }
 
@@ -17,11 +17,12 @@
     background: #b4b650;
 }
 body{
-    background-color: #f3f56f !important;
+    background-color: #EBDAB4 !important;
     font-family: 'Poppins', sans-serif !important;
+    color: #3C3836 !important;
 }
 .sidebar{
-    background-color: white;
+    background-color: #FBF0C9;
     border-radius: 50px;
     height: 90vh;
     padding: 25px;
@@ -30,13 +31,14 @@ body{
 }
 .notepadbox{
     height: 90vh;
-    background-color: white;
+    background-color: #FBF0C9;
     border-radius: 50px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.336);
     padding: 50px;
 }
+
 .logo-text{
-    background-color: #e6c046;
+    background-color: #D5C4A3;
     height: 50px;
     border-radius: 20px;
     font-family: 'Poppins', sans-serif;
@@ -47,7 +49,7 @@ body{
     align-items: center;
 }
 .submitbutton{
-    background-color: rgb(230, 192, 70);
+    background-color: #D5C4A3;
     border: 0px;;
     padding: 5px;
     font-size: 25px;
@@ -63,7 +65,7 @@ body{
     transform: scale(1.05);
 }
 .searchbox{
-    background-color: rgba(227, 236, 255, 0.555);
+    background-color: #D5C4A3;
     padding: 10px;
     font-size: 20px;
     border-radius: 20px;
@@ -79,7 +81,7 @@ body{
     outline: none;
 }
 .note{
-    background-color: rgba(227, 236, 255, 0.555);
+    background-color: #EBDAB4;
     padding: 10px;
     margin-top: 4px;
     border-radius: 20px;
@@ -98,7 +100,7 @@ body{
    align-items: center;
     justify-content: center;
     font-size: 30px;
-    background-color: #e6c046;
+    background-color: #D5C4A3;
     border-radius: 20px;
    
     
@@ -116,7 +118,7 @@ body a{
     color: black;
 }
 .settingsbutton{
-    background-color: #e6c046;
+    background-color: #D5C4A3;
     border: 0px;
     padding: 5px;
     font-size: 25px;

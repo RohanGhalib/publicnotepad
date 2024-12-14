@@ -18,7 +18,7 @@
                     <div class="col">
                         <div class="listnotes overflow-auto " style="height: 400px; overflow-x: hidden !important;">
                         <?php
-                            $query = "SELECT * FROM notes ORDER BY views DESC limit 150";
+                            $query = "SELECT * FROM notes ORDER BY views DESC";
                             $result = mysqli_query($conn, $query);
 
                             while ($row = mysqli_fetch_assoc($result)) {
@@ -47,6 +47,14 @@
                             </script>
                         </div>
                     </div>
+                </div>
+               
+                <div class=" row sticky-bottom mt-2 justify-content-center align-items-center text-align-center">
+                <div class="col text-align-center dropdown">
+                    <a class="settingsbutton text-align-center " href="settings.php" >
+                        <i class="bi bi-gear-fill"></i> Appearance (NEW!)
+                    </a>
+                </div>
                 </div>
             </div>
         </div>
