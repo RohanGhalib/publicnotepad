@@ -19,8 +19,15 @@ include 'db.php';?>
                 </div>
                 <input type="hidden" name="note" id="note">
                 <script>
+                    function sanitizeHTML(str) {
+                        var temp = document.createElement('div');
+                        temp.textContent = str;
+                        return temp.innerHTML;
+                    }
+
                     document.querySelector('form').onsubmit = function() {
-                        document.querySelector('#note').value = quill.root.innerHTML;
+                        var noteContent = quill.root.innerHTML;
+                        document.querySelector('#note').value = sanitizeHTML(noteContent);
                     };
                 </script>
                 <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
