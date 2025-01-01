@@ -36,7 +36,7 @@ include 'db.php';
                         });
                     }
                 </script>
-                <p><?php echo $row["note"] ?></p>
+                <div><?php echo nl2br($row["note"]); ?></div>
 
                 <div class="comment-container overflow-auto max-height-200">
                 <h5 class="comment-heading">Comments:</h5>
