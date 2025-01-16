@@ -2,7 +2,7 @@
 include 'db.php';
 if(isset($_POST["id"])){
     $id = $_POST["id"];
-    $comment = $_POST["comment"];
+    $comment = strip_tags($_POST["comment"]);
 
     // Check if the id exists in the notes table
     $check_stmt = $conn->prepare("SELECT id FROM notes WHERE id = ?");
